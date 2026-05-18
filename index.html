@@ -19,40 +19,16 @@
 </head>
 <body>
 
-    <!-- Preloader -->
-    <div class="preloader" id="preloader">
-        <div class="preloader-content">
-            <span class="preloader-letter" style="--i:0">A</span>
-            <span class="preloader-letter" style="--i:1">S</span>
-            <span class="preloader-letter" style="--i:2">H</span>
-            <span class="preloader-letter" style="--i:3">O</span>
-            <span class="preloader-letter" style="--i:4">K</span>
-            <span class="preloader-letter" style="--i:5">A</span>
-            <div class="preloader-dot"></div>
-        </div>
-    </div>
-
-    <!-- Cursor Glow (Desktop only) -->
-    <div class="cursor-glow" id="cursorGlow"></div>
-
-    <!-- 1. Navigation Bar (Sticky, Glassmorphism) -->
+    <!-- 1. Navigation Bar (Sticky) -->
     <nav id="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="#">Ashoka Boys Hostel & PG</a>
+                <a href="#">🏛️ Ashoka Boys Hostel & PG</a>
             </div>
-            <button class="mobile-menu-toggle" aria-label="Toggle menu">
-                <i data-lucide="menu"></i>
-            </button>
             <div class="nav-right">
                 <a href="tel:+919723383108" class="nav-contact">
                     <i data-lucide="phone"></i> 097233 83108
                 </a>
-                <!-- Dark Mode Toggle -->
-                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
-                    <i data-lucide="sun" class="icon-sun"></i>
-                    <i data-lucide="moon" class="icon-moon"></i>
-                </button>
                 <a href="https://api.whatsapp.com/send?phone=919723383108&text=Hi%20there!%20I'd%20like%20to%20know%20more%20about%20Ashoka%20Boys%20Hostel." target="_blank" class="btn btn-whatsapp">
                     <i data-lucide="message-circle"></i> Chat with Us
                 </a>
@@ -60,56 +36,48 @@
         </div>
     </nav>
 
-    <!-- 2. Hero Section — Multi-Layer Parallax -->
+    <!-- 2. Hero Section -->
     <header class="hero section-fade-in" id="hero">
-        <div class="hero-bg-layer" data-parallax="0.3"></div>
-        <div class="hero-overlay-layer"></div>
-        <div class="hero-content" data-parallax="0.1">
+        <div class="hero-content">
             <h1>Elevate Your Living Standard.</h1>
-            <p>Experience comfort, community, and premium facilities at Ahmedabad's premier boys' residence.</p>
-            <a href="pricing.html" class="btn btn-primary">Explore Plans</a>
+            <p>Experience premium comfort, vibrant community, and exceptional facilities at Ahmedabad's premier boys' residence.</p>
+            <a href="pricing.html" class="btn btn-primary">
+                <i data-lucide="home"></i> Explore Our Plans
+            </a>
         </div>
         <div class="hero-scroll-indicator">
-            <span>Scroll</span>
+            <span>Scroll to explore</span>
             <i data-lucide="chevron-down"></i>
         </div>
     </header>
 
-    <!-- 3. Interior Showcase (Carousel) -->
+    <!-- 3. Interior Showcase (The Slide Bar) -->
     <section class="interior section-fade-in" id="interior">
         <div class="container">
             <h2 class="section-title">Inside Ashoka</h2>
         </div>
-        <div class="carousel-wrapper">
-            <div class="carousel-container">
-                <div class="carousel-track" id="carouselTrack">
-                    <div class="carousel-slide">
-                        <img src="interior/3192006f-26bb-4c6c-9986-fb9663e82bde.jpg" alt="Ashoka Interior Room 1">
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="interior/44a0a3dc-47aa-4770-8f9b-32cfd8d0e3fe.jpg" alt="Ashoka Interior Room 2">
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="interior/4e3a060d-adf8-40a5-9b80-e57bf28c19c3.jpg" alt="Ashoka Interior Room 3">
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="interior/e5f25073-da06-4f77-ab38-9b121bf6c34c.jpg" alt="Ashoka Interior Room 4">
-                    </div>
+        <div class="carousel-container">
+            <div class="carousel-track" id="carouselTrack">
+                <div class="carousel-slide">
+                    <img src="interior/3192006f-26bb-4c6c-9986-fb9663e82bde.jpg" alt="Ashoka Interior - Room with modern amenities">
                 </div>
-                <button class="carousel-btn prev-btn" id="prevBtn"><i data-lucide="chevron-left"></i></button>
-                <button class="carousel-btn next-btn" id="nextBtn"><i data-lucide="chevron-right"></i></button>
+                <div class="carousel-slide">
+                    <img src="interior/44a0a3dc-47aa-4770-8f9b-32cfd8d0e3fe.jpg" alt="Ashoka Interior - Comfortable living space">
+                </div>
+                <div class="carousel-slide">
+                    <img src="interior/4e3a060d-adf8-40a5-9b80-e57bf28c19c3.jpg" alt="Ashoka Interior - Premium room design">
+                </div>
+                <div class="carousel-slide">
+                    <img src="interior/e5f25073-da06-4f77-ab38-9b121bf6c34c.jpg" alt="Ashoka Interior - Spacious dormitory">
+                </div>
             </div>
-            <!-- Carousel Dots -->
-            <div class="carousel-dots" id="carouselDots"></div>
-            <!-- Carousel Progress Bar -->
-            <div class="carousel-progress">
-                <div class="carousel-progress-bar" id="carouselProgressBar"></div>
-            </div>
+            <button class="carousel-btn prev-btn" id="prevBtn" aria-label="Previous slide"><i data-lucide="chevron-left"></i></button>
+            <button class="carousel-btn next-btn" id="nextBtn" aria-label="Next slide"><i data-lucide="chevron-right"></i></button>
         </div>
     </section>
 
     <!-- 4. Quick Links -->
-    <section class="quick-links section-fade-in">
+    <section class="quick-links section-fade-in" style="padding: 6rem 0; background-color: var(--bg-color);">
         <div class="container">
             <h2 class="section-title">Discover More</h2>
             <div class="cards-grid">
@@ -118,17 +86,21 @@
                     <div class="feature-card-overlay"></div>
                     <div class="feature-card-content">
                         <h3>Premium Facilities</h3>
-                        <p>Explore our world-class amenities designed for your comfort.</p>
-                        <a href="facilities.html" class="btn btn-primary">Explore Facilities <i data-lucide="arrow-right"></i></a>
+                        <p>Explore our world-class amenities designed for your comfort and well-being.</p>
+                        <a href="facilities.html" class="btn btn-primary">
+                            <i data-lucide="arrow-right"></i> Explore Facilities
+                        </a>
                     </div>
                 </div>
                 <!-- Pricing Card -->
-                <div class="feature-card" style="background-image: url('istockphoto-1411046871-612x612.jpg');">
+                <div class="feature-card" style="background-image: url('interior/44a0a3dc-47aa-4770-8f9b-32cfd8d0e3fe.jpg');">
                     <div class="feature-card-overlay"></div>
                     <div class="feature-card-content">
                         <h3>Living Plans</h3>
-                        <p>Find the perfect space that suits your lifestyle and budget.</p>
-                        <a href="pricing.html" class="btn btn-primary">View Plans <i data-lucide="arrow-right"></i></a>
+                        <p>Find the perfect space that suits your lifestyle and budget perfectly.</p>
+                        <a href="pricing.html" class="btn btn-primary">
+                            <i data-lucide="arrow-right"></i> View Plans
+                        </a>
                     </div>
                 </div>
             </div>
@@ -140,7 +112,7 @@
         <div class="container">
             <div class="location-wrapper">
                 <div class="location-image">
-                    <img src="outside/2ad55375-8272-410a-a148-e303284eb06a.jpg" alt="Ashoka Building Exterior">
+                    <img src="outside/2ad55375-8272-410a-a148-e303284eb06a.jpg" alt="Ashoka Boys Hostel - Building exterior">
                 </div>
                 <div class="location-info">
                     <h2 class="section-title text-left">Visit Us</h2>
@@ -156,70 +128,23 @@
         </div>
     </section>
 
-    <!-- 7. Footer Redesign -->
+    <!-- Footer -->
     <footer>
-        <!-- Wave Divider -->
-        <div class="footer-wave">
-            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
-                <path d="M0,60 C240,120 480,0 720,60 C960,120 1200,0 1440,60 L1440,120 L0,120 Z"></path>
-            </svg>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>Ashoka Boys Hostel & PG</h3>
+                <p>Elevating living standards in Ahmedabad.</p>
+            </div>
+            <div class="footer-social">
+                <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+            </div>
         </div>
-        <div class="footer-inner">
-            <div class="container">
-                <div class="footer-grid">
-                    <!-- Brand Column -->
-                    <div class="footer-brand-col">
-                        <h3>Ashoka Boys Hostel & PG</h3>
-                        <p>Elevating living standards in Ahmedabad with premium facilities, comfort, and community since 2015.</p>
-                    </div>
-                    <!-- Quick Links Column -->
-                    <div class="footer-links-col">
-                        <h4>Quick Links</h4>
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="facilities.html">Facilities</a></li>
-                            <li><a href="pricing.html">Pricing</a></li>
-                            <li><a href="#location">Location</a></li>
-                        </ul>
-                    </div>
-                    <!-- Contact Column -->
-                    <div class="footer-contact-col">
-                        <h4>Contact Us</h4>
-                        <p><i data-lucide="phone"></i> 097233 83108</p>
-                        <p><i data-lucide="map-pin"></i> 132 Feet Ring Rd, Nava Vadaj, Ahmedabad - 380013</p>
-                        <p><i data-lucide="message-circle"></i> WhatsApp Available</p>
-                    </div>
-                </div>
-            </div>
-            <!-- CTA Bar -->
-            <div class="footer-cta">
-                <div class="container">
-                    <p>Ready to elevate your living experience?</p>
-                    <a href="https://api.whatsapp.com/send?phone=919723383108&text=Hi%20there!%20I'd%20like%20to%20know%20more%20about%20Ashoka%20Boys%20Hostel." target="_blank" class="btn btn-primary">Enquire Now <i data-lucide="arrow-right"></i></a>
-                </div>
-            </div>
-            <!-- Bottom Bar -->
-            <div class="container">
-                <div class="footer-bottom">
-                    <p>&copy; 2026 Ashoka Boys Hostel & PG. All rights reserved.</p>
-                    <div class="footer-social">
-                        <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
-                        <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
-                        <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
-                    </div>
-                </div>
-            </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Ashoka Boys Hostel & PG. All rights reserved.</p>
         </div>
     </footer>
-
-    <!-- Back-to-Top Button -->
-    <button class="back-to-top" id="backToTop" aria-label="Back to top">
-        <svg class="progress-ring" width="56" height="56">
-            <circle class="progress-ring-bg" cx="28" cy="28" r="25"></circle>
-            <circle class="progress-ring-fill" cx="28" cy="28" r="25"></circle>
-        </svg>
-        <i data-lucide="arrow-up" class="back-to-top-icon"></i>
-    </button>
 
     <!-- Mobile Bottom Bar -->
     <div class="mobile-bottom-bar">
